@@ -263,7 +263,7 @@ async def start(client, message):
         files = files_[0]
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
         k = await client.send_message(chat_id=user,text=f'''
-        <b>📕Nᴀᴍᴇ ➠ : <code>{files.file_name}</code> \n\n🔗Sɪᴢᴇ ➠ : {get_size(files.file_size)}\n\n📂Fɪʟᴇ ʟɪɴᴋ ➠ : {g}\n\n<i>Note: This message is deleted in 20 mins to avoid copyrights. Save the link to Somewhere else</i></b>
+        <b>🗂️ Name : {files.file_name} \n\n🏷 Size : {get_size(files.file_size)}\n\n🔗 Link : {g}\n\n<i>Note: This message is deleted in 20 mins to avoid copyrights. Save the link to Somewhere else</i></b>
         ''', reply_markup=InlineKeyboardMarkup(
                 [
                     [
