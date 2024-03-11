@@ -202,18 +202,6 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 🏷 Size : {file_size}
 </b>""" 
-
-    
-    IMDB_TEMPLATE_TXT ="""<b>
-🔎 Query : <code>{qurey}</code>
-
-🏷 Title : {title}
-🎭 Genres : {genres}
-📆 Year : {year}
-🌟 Rating : {rating} | IMDB
-
-👤 Requested by : {message.from_user.mention}
-</b>"""
     
 
 
