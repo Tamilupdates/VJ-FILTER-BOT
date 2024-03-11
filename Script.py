@@ -218,7 +218,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 </b>""" 
 
     IMDB_TEMPLATE_TXT ="""<b>
-🔎 Query: <code>{qurey}</code>
+🔎 Query : <code>{qurey}</code>
 
 🏷 Title : {title}
 🎭 Genres : {genres}
