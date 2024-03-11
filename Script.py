@@ -217,19 +217,19 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 📥 Join : @Tamizhupdate
 </b>""" 
 
+#🔎 Query : <code>{qurey}</code>
+    
     IMDB_TEMPLATE_TXT ="""<b>
-🔎 Query : <code>{qurey}</code>
-
 🏷 Title : {title}
 🎭 Genres : {genres}
 📆 Year : {year}
 🌟 Rating : {rating} | IMDB
 
 © Upload by : @Tamizhupdate
-
-👤 Requested by : {message.from_user.mention}
 </b>"""
     
+#👤 Requested by : {message.from_user.mention}
+
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
     
