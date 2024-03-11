@@ -216,13 +216,12 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 </b>""" 
 
     IMDB_TEMPLATE_TXT = """<b>
-🔎 Query: {qurey}
+🔎 Query: <code>{qurey}</code>
 
 🏷 Title : {title}
 🎭 Genres : {genres}
 📆 Year : {year}
-🌟 Rating : {rating} | IMDB</b>
-
+🌟 Rating : {rating} | IMDB
 © Upload by : @Tamizhupdate
 
 👤 Requested by : {message.from_user.mention}
