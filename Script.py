@@ -214,7 +214,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 🏷 Size : {file_size}
 
-📥 Join : {UPDATES_URL}
+📥 Join : @Tamizhupdate
 </b>""" 
 
     IMDB_TEMPLATE_TXT ="""<b>
@@ -225,7 +225,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 📆 Year : {year}
 🌟 Rating : {rating} | IMDB
 
-© Upload by : {UPDATES_URL}
+© Upload by : @Tamizhupdate
 
 👤 Requested by : {message.from_user.mention}
 </b>"""
