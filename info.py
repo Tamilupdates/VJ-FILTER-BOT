@@ -1,6 +1,4 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 
 import re
@@ -89,11 +87,6 @@ LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
 
-                           # Don't Remove Credit @VJ_Botz
-                           # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-                           # Ask Doubt on telegram @KingVJ01
-
-
 # Online Stream and Download
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
@@ -137,6 +130,4 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
