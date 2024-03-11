@@ -209,20 +209,23 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>
+    CAPTION = f"""<b>
 🗂️ File : {file_name}
 
 🏷 Size : {file_size}
+
+📥 Join : {UPDATES_URL}
 </b>""" 
 
-    IMDB_TEMPLATE_TXT = """<b>
+    IMDB_TEMPLATE_TXT =f"""<b>
 🔎 Query: <code>{qurey}</code>
 
 🏷 Title : {title}
 🎭 Genres : {genres}
 📆 Year : {year}
 🌟 Rating : {rating} | IMDB
-© Upload by : @Tamizhupdate
+
+© Upload by : {UPDATES_URL}
 
 👤 Requested by : {message.from_user.mention}
 </b>"""

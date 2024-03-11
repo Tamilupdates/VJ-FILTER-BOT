@@ -7,7 +7,7 @@ from utils import temp
 from pyrogram.types import Message
 from database.users_chats_db import db
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from info import SUPPORT_CHAT
+from info import UPDATES_URL
 
 async def banned_users(_, client, message: Message):
     return (
@@ -30,7 +30,7 @@ async def ban_reply(bot, message):
 @Client.on_message(filters.group & disabled_group & filters.incoming)
 async def grp_bd(bot, message):
     buttons = [[
-        InlineKeyboardButton('Support', url=f'https://telegram.me/{SUPPORT_CHAT}')
+        InlineKeyboardButton('⚡️ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_URL)
     ]]
     reply_markup=InlineKeyboardMarkup(buttons)
     vazha = await db.get_chat(message.chat.id)
