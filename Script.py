@@ -209,13 +209,14 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
-<b>🗂️ File : {file_name}
+    CAPTION = """<b>
+🗂️ File : {file_name}
 
-🏷 Size : {file_size}</b>""" 
+🏷 Size : {file_size}
+</b>""" 
 
-    IMDB_TEMPLATE_TXT = """
-<b>🔎 Query: {qurey}
+    IMDB_TEMPLATE_TXT = """<b>
+🔎 Query: {qurey}
 
 🏷 Title : {title}
 🎭 Genres : {genres}
@@ -224,7 +225,8 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 © Upload by : @Tamizhupdate
 
-👤 Requested by : {message.from_user.mention}</b>"""
+👤 Requested by : {message.from_user.mention}
+</b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
