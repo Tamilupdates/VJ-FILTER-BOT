@@ -209,7 +209,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = f"""<b>
+    CAPTION = """<b>
 🗂️ File : {file_name}
 
 🏷 Size : {file_size}
@@ -217,7 +217,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 📥 Join : {UPDATES_URL}
 </b>""" 
 
-    IMDB_TEMPLATE_TXT =f"""<b>
+    IMDB_TEMPLATE_TXT ="""<b>
 🔎 Query: <code>{qurey}</code>
 
 🏷 Title : {title}
