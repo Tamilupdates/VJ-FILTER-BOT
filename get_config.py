@@ -1,28 +1,6 @@
 import logging
 from requests import get as rget
 import os
-import subprocess
-
-def set_permissions(directory):
-    os.chmod(directory, 0o777)
-
-CLONE_DIR = '/VJ-FILTER-BOT'
-
-UPSTREAM_REPO = os.environ.get('UPSTREAM_REPO')
-if not UPSTREAM_REPO:
-    print("Cloning main Repository")
-    subprocess.run(['git', 'clone', 'https://github.com/Tamilupdates/VJ-FILTER-BOT.git', CLONE_DIR])
-else:
-    print(f"Cloning Custom Repo from {UPSTREAM_REPO}")
-    subprocess.run(['git', 'clone', UPSTREAM_REPO, CLONE_DIR])
-
-set_permissions(CLONE_DIR)
-
-os.chdir(CLONE_DIR)
-
-subprocess.run(['pip3', 'install', '-U', '-r', 'requirements.txt'])
-print("Starting Bot....")
-subprocess.run(['python3', 'bot.py'])
 
 logging.basicConfig(level=logging.ERROR)
 LOGGER = logging.getLogger(__name__)
