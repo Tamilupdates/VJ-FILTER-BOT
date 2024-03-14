@@ -1260,8 +1260,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
                                                     InlineKeyboardButton('🖥️ Watch Online 🖥️', url=lazy_stream)]])  # web stream Link
             )
-            await asyncio.sleep(10)
-            await stream.delete()
+            await stream.delete(10)
 
         except Exception as e:
             print(e)  # print the error message
