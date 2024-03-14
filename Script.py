@@ -129,9 +129,11 @@ Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}"""
 
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Nᴀᴍᴇ - {}"""
+    LOG_TEXT_P = """<b>#NewUser
+
+𝗜𝗗 : <code>{}</code>
+
+𝗡𝗮𝗺𝗲 : {}</b>"""
 
     ALRT_TXT = """ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
