@@ -1,6 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
-from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, IS_SHORTLINK, LOG_CHANNEL, TUTORIAL, UPDATES_URL, SUBSCRIBE_URL, CUSTOM_FILE_CAPTION
+from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, REDIRECT_URL, IS_SHORTLINK, LOG_CHANNEL, TUTORIAL, UPDATES_URL, SUBSCRIBE_URL, CUSTOM_FILE_CAPTION
 from imdb import Cinemagoer 
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
@@ -518,16 +518,16 @@ async def get_shortlink(chat_id, link):
         shortzy = Shortzy(api_key=API, base_site=URL)
         link = await shortzy.convert(link)
         
-        if 'REDIRECT_URL' in globals():
-            # Splitting the final URL
-            last_part = link.split('/')[-1]
-            
+        # Splitting the final URL
+        last_part = link.split('/')[-1]
+        
+        if hasattr(info, 'REDIRECT_URL'):
             # Constructing the new link format
-            final_url = f"https://{REDIRECT_URL}/{last_part}"
-    
-            return final_url
+            final_url = f"https://{info.REDIRECT_URL}/{last_part}"
         else:
-            return link
+            final_url = link
+            
+        return final_url
 
 async def get_tutorial(chat_id):
     settings = await get_settings(chat_id) #fetching settings for group
