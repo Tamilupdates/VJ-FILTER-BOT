@@ -24,11 +24,14 @@
     "buildpacks": [{
         "url": "heroku/python"
     }],
-    "formation": {
-        "web": {
-            "quantity": 1,
-            "size": "Basic"
-        }
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Basic"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "Basic"
     }
+  }
 }
-
