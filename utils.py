@@ -517,7 +517,7 @@ async def get_shortlink(chat_id, link):
     else:
         shortzy = Shortzy(api_key=API, base_site=URL)
         link = await shortzy.convert(link)
-        if FINAL_URL not in ["", 0, None]:
+        if FINAL_URL is not None and FINAL_URL != 0:
             last_part = link.split('/')[-1]
             final_url = f"https://{FINAL_URL}/{last_part}"
             return final_url
