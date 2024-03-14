@@ -181,9 +181,9 @@ Nᴀᴍᴇ - {}"""
     SELECT = """
 MOVIES ➢ Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs"
 
-SERIES ➢ Sᴇʟᴇᴄᴛ "🔰 Sᴇᴀsᴏɴs ♻️"
+SERIES ➢ Sᴇʟᴇᴄᴛ "♻️ Sᴇᴀsᴏɴs ♻️"
 
-Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "🔰 Sᴇᴀsᴏɴs ♻️" Bᴜᴛᴛᴏɴ ᴀɴᴅ Cʟɪᴄᴋ "Sᴇɴᴅ Aʟʟ" Tᴏ ɢᴇᴛ Aʟʟ Fɪʟᴇ Lɪɴᴋs ɪɴ ᴀ Sɪɴɢʟᴇ ᴄʟɪᴄᴋ"""
+Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "♻️ Sᴇᴀsᴏɴs ♻️" Bᴜᴛᴛᴏɴ ᴀɴᴅ Cʟɪᴄᴋ "Sᴇɴᴅ Aʟʟ" Tᴏ ɢᴇᴛ Aʟʟ Fɪʟᴇ Lɪɴᴋs ɪɴ ᴀ Sɪɴɢʟᴇ ᴄʟɪᴄᴋ"""
 
     SINFO = """
 🫣 Movie Venumna Join Panni Try Again Buttana Click Pannu😅"""
