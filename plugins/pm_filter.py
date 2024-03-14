@@ -1253,14 +1253,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
                                                     InlineKeyboardButton('🖥️ Watch Online 🖥️', url=lazy_stream)]])  # web stream Link
             )
-            stream=await query.message.reply_text(
+            await query.message.reply_text(
                 text="<b>•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔</b>",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
                                                     InlineKeyboardButton('🖥️ Watch Online 🖥️', url=lazy_stream)]])  # web stream Link
             )
-            await stream.delete(10)
+            await asyncio.sleep(10)
 
         except Exception as e:
             print(e)  # print the error message
