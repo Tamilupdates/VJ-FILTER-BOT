@@ -518,7 +518,7 @@ async def get_shortlink(chat_id, link):
         shortzy = Shortzy(api_key=API, base_site=URL)
         link = await shortzy.convert(link)
         
-        if hasattr(info, 'REDIRECT_URL') and REDIRECT_URL is not None:
+        if REDIRECT_URL is not None:
             last_part = link.split('/')[-1]
             final_url = f"https://{REDIRECT_URL}/{last_part}"
             return final_url
