@@ -1098,11 +1098,3 @@ async def stop_button(bot, message):
     await asyncio.sleep(3)
     await msg.edit("**✅️ 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳. 𝙽𝙾𝚆 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴**")
     os.execl(sys.executable, sys.executable, *sys.argv)
-
-
-@Client.on_message(filters.command("refresh") & filters.user(ADMINS))
-async def stop_button(bot, message):
-    msg = await bot.send_message(text="**🔄 Processing the Refresh...**", chat_id=message.chat.id)       
-    await asyncio.sleep(3)
-    await msg.edit("**✅️ Refresh Successful!**")    
-    subprocess.Popen(["sh", "-c", "python3 get_config.py && python3 bot.py"])
