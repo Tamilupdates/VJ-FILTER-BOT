@@ -525,9 +525,9 @@ async def get_shortlink(chat_id, link):
             # Constructing the new link format
             final_url = f"https://{REDIRECT_URL}/{last_part}"
         except AttributeError:
-            return link
+            return final_url
         
-        return final_url
+        return link
 
 
 async def get_tutorial(chat_id):
