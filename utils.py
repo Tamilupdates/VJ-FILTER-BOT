@@ -521,13 +521,12 @@ async def get_shortlink(chat_id, link):
         # Splitting the final URL
         last_part = link.split('/')[-1]
         
-        if hasattr(info, 'REDIRECT_URL'):
+        if hasattr(info, 'REDIRECT_URL') and info.REDIRECT_URL is not None:
             # Constructing the new link format
             final_url = f"https://{info.REDIRECT_URL}/{last_part}"
+            return final_url
         else:
-            final_url = link
-            
-        return final_url
+            return link
 
 async def get_tutorial(chat_id):
     settings = await get_settings(chat_id) #fetching settings for group
