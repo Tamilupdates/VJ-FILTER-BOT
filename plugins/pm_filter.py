@@ -1262,7 +1262,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         except Exception as e:
             print(e)  # print the error message
-            await query.answer(f"Mb>☣something went wrong sweetheart</b>\n\n{e}", show_alert=True)
+            await query.answer(f"<b>☣something went wrong sweetheart</b>\n\n{e}", show_alert=True)
             return
     # don't change anything without contacting me @creatorrio
 
