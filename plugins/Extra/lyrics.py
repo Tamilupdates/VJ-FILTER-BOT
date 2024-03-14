@@ -1,9 +1,7 @@
-# Don't Remove Credit @VJ_Botz
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton 
-
+from info import UPDATES_URL
 import requests 
-
 import os
 
 
