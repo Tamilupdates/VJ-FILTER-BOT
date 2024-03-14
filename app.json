@@ -28,10 +28,6 @@
     "web": {
       "quantity": 1,
       "size": "Basic"
-    },
-    "worker": {
-      "quantity": 1,
-      "size": "Basic"
     }
   }
 }
