@@ -273,7 +273,8 @@ async def start(client, message):
                         InlineKeyboardButton('⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=await get_tutorial(chat_id))
                     ]
                 ]
-            )
+            ),
+            disable_web_page_preview=True
         )
         await asyncio.sleep(1200)
         await k.edit("<b>Your message is successfully deleted!!!</b>")
